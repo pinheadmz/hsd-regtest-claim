@@ -1,0 +1,70 @@
+; File written on Tue Aug 27 14:31:06 2019
+; dnssec_signzone version 9.14.4
+bitcoin.com.		172800	IN SOA	com. admin.email.bitcoin.com. (
+					2007120710 ; serial
+					86400      ; refresh (1 day)
+					7200       ; retry (2 hours)
+					2419200    ; expire (4 weeks)
+					3600       ; minimum (1 hour)
+					)
+			172800	RRSIG	SOA 8 2 172800 (
+					20190926203106 20190827203106 17421 bitcoin.com.
+					p8N/xNwMDdVJpcVL0JU/g6qBPaehd89j+bVI
+					EwOpfkAQTAYirEdVGZ+ylkHp71U8YfNjxQNN
+					Idu06v4Sxmp7vBNuE4sZricBzL1x9duwAEYK
+					DZdak7JYhCNgnU/xZW69urpHw8FBUZ4p60aV
+					bIAvv3AVD3qjmnGrcq5yx9QPZOg= )
+			172800	TXT	"hns-regtest:aakolmkpax6dszyullk3wzwrujz2k7etdmap2adeaai4rxpbtwp3dxcs4grnhmr6pklw7y5fccpxk5xpqscemgguaadqcaaaacpyp3yf"
+			172800	RRSIG	TXT 8 2 172800 (
+					20190926203106 20190827203106 17421 bitcoin.com.
+					wE/Ky5yH9bG2DAmOp1d0oSOA2OpsrmxQjv8w
+					OvnNkYC65Vo38eBDj64wSU2x1tgO91TBepj1
+					rLj3Df2owMYv3A+Ciu/qXXCRSM/2krcltXis
+					guV7tLltBQLsiPtVs1wEr8vCWcaZP4yd1lo4
+					1Bmvi0YajOsxV7NNWJloTPJfdNM= )
+			3600	NSEC	bitcoin.com. SOA TXT RRSIG NSEC DNSKEY
+			3600	RRSIG	NSEC 8 2 3600 (
+					20190926203106 20190827203106 17421 bitcoin.com.
+					bE/N8p6yPoiyyxP/C9JtAmRKeR4PhJ0Q0oZQ
+					O3oMSffppwwtlNkWPU3gVACWlOK4GokCM8r0
+					g3u1bAB2YwiymLoW7UjczEnjLdHhb8FI/zp2
+					tIHkC7VRqYdGawPXEfso2bVWDmt7WeDVoYAV
+					B8Bv2Irfbzl9QmfM3+CzG5yxRmc= )
+			172800	DNSKEY	256 3 8 (
+					AwEAAeII4JIZQOj1O2ZdPE4MpxhT9aCx4QJY
+					3wNxmb7vlWlK12Tge9ZvXFPPOJJdndBkliVo
+					TcSI4FoijO5RipDqAlgnZhvZdQlHDVTWvZVb
+					B/QAM74GtmTe/K2LFvlwVh3bTKldBarfskLy
+					ThruJQHQ75W4Mhhv4LxjCehkawtVZT/3
+					) ; ZSK; alg = RSASHA256 ; key id = 17421
+			172800	DNSKEY	257 3 8 (
+					AwEAAckyAOxjWvLrW2x3TEN/ntfqp8mcMG98
+					ao7YUwENmmaZ+A3rmlEqBLrub+a7rPYIuSz1
+					qxSK/6+7FEzO1zKoLI62iL/ps4TGDs2SG9rF
+					n37AMvJ0uDVivUlVMvNjyl0djfdIpi+FqjI3
+					42RBqHwTBIHISZaNw0mkYOsTHYOuZmTFN6nf
+					RcQKeqofaMav6t+RBs6FmPWUoy9m0lsE9vil
+					GPu7zuZZCuzGXlCVi37y9MrpFy2GBzM+qK2c
+					jvi22zE3lwz7aSCcCIeS98PaROCI5yXy4y24
+					prDn3t1zLQP/Zi/Y1/w0Llr074zmMK/+fLKV
+					xV6MLTHt6MCitCVKDLLun/M=
+					) ; KSK; alg = RSASHA256 ; key id = 5329
+			172800	RRSIG	DNSKEY 8 2 172800 (
+					20190926203106 20190827203106 5329 bitcoin.com.
+					ngzrN6bfZomzWz3NHdgK+KFHfGVh3K32PGqZ
+					MMAWKZfr7+sGgFHLRJX8lhXdwXwcPjMONyt5
+					i1nCLykeMRIKB7OEL7SMY2Dk3oONQcpfCLEK
+					7GXSHmAfw812ufPZg5qajheBVVye4fHdmkVE
+					4GDjANYLU532kF73VMd7IgU7LRzetFQUhuuq
+					XPtIdkGIsjxc3C0v0jbwWvQJtm2nSUufv/qJ
+					XelaaYVY39OWBQxtluo2hL5BCVFLvLsrQL+/
+					D1A5awetSVbZnYnPesDU0wZYRTgtG8vxB3Xo
+					G0CQj3NxH8dspe0t1gqnfAhTTTXd05Jo+h5l
+					SBTxxHzgsuAOCCmMWg== )
+			172800	RRSIG	DNSKEY 8 2 172800 (
+					20190926203106 20190827203106 17421 bitcoin.com.
+					KD7Cx9WE2S1fDL+Z1Q/bHDMWoVkOb6C7iZn4
+					gepTzkw+H8cyMbN5IfRqt2xkmunKfnrsywpc
+					BdjO1Jhs7biohV2mAwQId3L2aH9lmvMOKcKX
+					bvmLcpNRHS/Z5svdkyaKFNui++v9HiuTjICo
+					fVwtyD7eK/JBgnzKnk0eS1kmki8= )
